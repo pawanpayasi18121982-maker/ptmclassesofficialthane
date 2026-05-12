@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PTM Classes Official</title>
+
+<style>
+
+/* BODY */
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    background:#f2f2f2;
+}
+
+/* HEADER */
+header{
+    background:white;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1{
+    color:teal;
+    font-size:40px;
+    margin:0;
+}
+
+/* HERO SECTION */
+.hero{
+    width:90%;
+    margin:20px auto;
+    background:teal;
+    border-radius:10px;
+    padding:30px 20px;
+    color:white;
+    text-align:center;
+}
+
+.hero img{
+    width:200px;
+    max-width:100%;
+}
+
+.hero h2{
+    font-size:40px;
+}
+
+.hero p{
+    font-size:22px;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:white;
+    color:teal;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+/* COURSES */
+.courses{
+    width:90%;
+    margin:30px auto;
+    text-align:center;
+}
+
+.course-box{
+    background:white;
+    margin:15px 0;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* MOBILE RESPONSIVE */
+media(max-width:768px){
+
+    header h1{
+        font-size:32px;
+    }
+
+    .hero h2{
+        font-size:30px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>Your Way To Achive Sucess</title>
+
+
+
+
+<!-- Contact Button -->
+<button class="btn" onclick="openContactPopup()">Contact Now</button
+
+</body>
+</html>
+
+<!-- POPUP -->
+<div id="contactPopup" class="popup-overlay">
+
+    <div class="popup-box">
+
+        <h3>Contact PTM Classes</h3>
+        <p>Choose how you want to connect</p>
+
+        <!-- FIRST NUMBER -->
+        <div class="contact-column">
+
+            <h4>7000901884</h4>
+
+            <button class="call-btn"
+                onclick="window.location.href='tel:+917000901884'">
+                📞 Call Now
+            </button>
+
+            <button class="wa-btn"
+                onclick="window.location.href='https://wa.me/917000901884'">
+                💬 WhatsApp
+            </button>
+
+        </div>
+
+        <!-- SECOND NUMBER -->
+        <div class="contact-column">
+
+            <h4>8291139863</h4>
+
+            <button class="call-btn"
+                onclick="window.location.href='tel:+918291139863'">
+                📞 Call Now
+            </button>
+
+            <button class="wa-btn"
+                onclick="window.location.href='https://wa.me/918291139863'">
+                💬 WhatsApp
+            </button>
+
+        </div>
+
+        <!-- CANCEL BUTTON -->
+        <button class="cancel-btn"
+            onclick="closeContactPopup()">
+            Cancel
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<script>
+
+function openContactPopup() {
+    document.getElementById("contactPopup").style.display = "flex";
+}
+
+function closeContactPopup() {
+    document.getElementById("contactPopup").style.display = "none";
+}
+
+</script>
+
+</body>
+</html>
+
+<html>
+
+<head>
+<style>
+
+<style>
+
+/* POPUP BACKGROUND */
+.popup-overlay{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:999;
+}
+
+/* POPUP BOX */
+.popup-box{
+    background:white;
+    width:90%;
+    max-width:350px;
+
+    padding:25px;
+    border-radius:20px;
+
+    text-align:center;
+}
+
+/* TITLE */
+.popup-box h3{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+/* TEXT */
+.popup-box p{
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+/* CONTACT BOX */
+.contact-box{
+    margin-top:20px;
+}
+
+/* NUMBER */
+.contact-box h4{
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+/* BUTTONS */
+.call-btn,
+.wa-btn,
+.cancel-btn{
+
+    width:100%;
+    padding:12px;
+
+    border:none;
+    border-radius:8px;
+
+    font-size:18px;
+    cursor:pointer;
+
+    margin-top:10px;
+}
+
+/* CALL BUTTON */
+.call-btn{
+    background:white;
+    border:2px solid black;
+}
+
+/* WHATSAPP BUTTON */
+.wa-btn{
+    background:white;
+    border:2px solid black;
+}
+
+/* CANCEL BUTTON */
+.cancel-btn{
+    background:white;
+    border:2px solid black;
+    margin-top:25px;
+}
+
+</style>
+
+
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Navbar */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+        background: white;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 0;
+    }
+
+    header h2 {
+        color: teal;
+    }
+
+    nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    nav a:hover {
+        color: teal;
+    }
+
+    /* Hero Section */
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 60px;
+        background: teal;
+        color: white;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        background: white;
+        color: teal;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .btn:hover {
+        background: lightgray;
+    }
+
+    .hero img {
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    /* Sections */
+    section {
+        padding: 60px;
+        text-align: center;
+    }
+
+    .courses {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .course-card {
+        width: 200px;
+        padding: 20px;
+        margin: 10px;
+        background: #f5f5f5;
+        border-radius: 10px;
+    }
+
+    footer {
+        background: #222;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>PTM Classes</h2>
+      <img src="https://i.im.ge/QM1MM7T/374.jpg" 
+     alt="Graduation Icon"
+     width="40"
+     style="border-radius:100px;">
+    <nav>
+        <a onclick="scrollToSection('home')">Home</a>
+        <a onclick="scrollToSection('courses')">Courses</a>
+        <a onclick="scrollToSection('contact')">Contact Us</a>
+        <a onclick="scrollToSection('about')">About us </a>
+        
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section id='home' class="hero">
+    <div class="hero-text">
+        <h1>PTM Classes Batch</h1>
+        <p>Provide:-Experienced Teachers and Study Materials (Bag,T-Shirt,Pouch) </p>
+        <script>
+// ✅ Smooth scroll
+function scrollToSection(id) {
+    const section = document.getElementById(id);
+    if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+    }
+}
+
+// ✅ Course Selection
+let selectedCourses = [];
+
+function toggleCourse(button, courseName) {
+    if (button.classList.contains("selected")) {
+        button.classList.remove("selected");
+        button.innerText = "Select";
+        selectedCourses = selectedCourses.filter(c => c !== courseName);
+    } else {
+        button.classList.add("selected");
+        button.innerText = "Selected";
+
+        if (!selectedCourses.includes(courseName)) {
+            selectedCourses.push(courseName);
+        }
+    }
+}
+
+// ✅ Enroll Button
+function enrollNow() {
+    if (selectedCourses.length === 0) {
+        alert("Please select the course you want");
+    } else {
+        alert("You have selected: " + selectedCourses.join(", "));
+    }
+}
+
+// ✅ Contact Popup
+function openContactPopup() {
+    document.getElementById("contactPopup").style.display = "flex";
+}
+
+function closeContactPopup() {
+    document.getElementById("contactPopup").style.display = "none";
+}
+
+function makeCall() {
+    window.location.href = "tel:+917000901884";
+}
+
+function openWhatsApp() {
+    window.location.href = "https://wa.me/917000901884";
+}
+</script>
+
+<!-- Enroll Button -->
+<button class="btn" onclick="enrollNow()">Enroll Now</button>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PTM Classes</title>
+
+<style>
+
+/* BODY */
+body{
+    font-family: Arial;
+    background:#f5f5f5;
+    padding:20px;
+    text-align:center;
+}
+
+/* LEFT & RIGHT SECTION */
+.selection-container{
+    display:flex;
+    justify-content:space-around;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+/* BOXES */
+.section-box{
+    width:40%;
+    min-width:250px;
+}
+
+/* BUTTON DESIGN */
+.btn{
+    width:180px;
+    padding:12px;
+    margin:8px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:bold;
+    background:teal;
+    color:white;
+    transition:0.3s;
+}
+
+/* SELECTED BUTTON */
+.selected{
+    background:green !important;
+    color:white;
+}
+
+/* NAME INPUT */
+.name-box{
+    margin-top:25px;
+}
+
+.name-input{
+    width:280px;
+    padding:12px;
+    border:2px solid teal;
+    border-radius:8px;
+    font-size:15px;
+    outline:none;
+}
+
+/* POPUP OVERLAY */
+.popup-overlay{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    justify-content:center;
+    align-items:center;
+}
+
+/* POPUP BOX */
+.popup-box{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    width:320px;
+    text-align:center;
+    box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+
+/* POPUP BUTTONS */
+.popup-btn{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:none;
+    border-radius:8px;
+    font-size:15px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* PAYMENT BUTTON */
+.pay-btn{
+    background:green;
+    color:white;
+}
+
+/* CANCEL BUTTON */
+.close-btn{
+    background:gray;
+    color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+
+</div>  
+
+
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" alt="Books">
+</section>
+
+
+<!-- Courses Section -->
+<section id='courses'>
+    <h2>Courses</h2>
+    <div class="courses">
+      
+      <!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PTM Classes</title>
+
+<style>
+
+/* BODY */
+body{
+    font-family: Arial;
+    text-align: center;
+    margin-top: 50px;
+    background: #f5f5f5;
+}
+
+/* MAIN BUTTON */
+.btn{
+    padding: 12px 22px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    background: teal;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: darkcyan;
+}
+
+/* SELECTED BUTTON */
+.selected{
+    background: green !important;
+    color: white;
+}
+
+/* POPUP OVERLAY */
+.popup-overlay{
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.5);
+    justify-content:center;
+    align-items:center;
+}
+
+/* POPUP BOX */
+.popup-box{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    width:320px;
+    text-align:center;
+    box-shadow:0 0 15px rgba(0,0,0,0.3);
+    animation: popup 0.3s ease;
+}
+
+keyframes popup{
+    from{
+        transform: scale(0.8);
+        opacity:0;
+    }
+    to{
+        transform: scale(1);
+        opacity:1;
+    }
+}
+
+/* POPUP BUTTONS */
+.popup-btn{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:none;
+    border-radius:8px;
+    font-size:15px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* PAYMENT BUTTON */
+.pay-btn{
+    background:green;
+    color:white;
+}
+
+/* CLOSE BUTTON */
+.close-btn{
+    background:gray;
+    color:white;
+}
+
+</style>
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PTM Classes</title>
+
+<style>
+
+/* BODY */
+body{
+    font-family: Arial;
+    background:#f5f5f5;
+    padding:20px;
+    text-align:center;
+}
+
+/* LEFT & RIGHT SECTION */
+.selection-container{
+    display:flex;
+    justify-content:space-around;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+/* BOXES */
+.section-box{
+    width:40%;
+    min-width:250px;
+}
+
+/* BUTTON DESIGN */
+.btn{
+    width:180px;
+    padding:12px;
+    margin:8px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:bold;
+    background:teal;
+    color:white;
+    transition:0.3s;
+}
+
+/* SELECTED BUTTON */
+.selected{
+    background:green !important;
+    color:white;
+}
+
+/* NAME INPUT */
+.name-box{
+    margin-top:25px;
+}
+
+.name-input{
+    width:280px;
+    padding:12px;
+    border:2px solid teal;
+    border-radius:8px;
+    font-size:15px;
+    outline:none;
+}
+
+/* POPUP OVERLAY */
+.popup-overlay{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    justify-content:center;
+    align-items:center;
+}
+
+/* POPUP BOX */
+.popup-box{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    width:320px;
+    text-align:center;
+    box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+
+/* POPUP BUTTONS */
+.popup-btn{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:none;
+    border-radius:8px;
+    font-size:15px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* PAYMENT BUTTON */
+.pay-btn{
+    background:green;
+    color:white;
+}
+
+/* CANCEL BUTTON */
+.close-btn{
+    background:gray;
+    color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+
+<div class="selection-container">
+
+    <!-- LEFT SIDE : SUBJECTS -->
+    <div class="section-box">
+      
+      </body>
+</html>
+
+
+
+</body>
+</html>
+      
+      <!-- NAME PANEL -->
+<div class="name-box">
+
+    <h3>Enter Student Name</h3>
+
+    <input type="text"
+    id="studentName"
+    class="name-input"
+    placeholder="Enter Child Name">
+
+</div>
+
+        <h3>Select Subjects</h3>
+
+        <button class="btn"
+        onclick="toggleSubject(this,'All Subjects')">
+            All Subjects
+        </button><br>
+
+        <button class="btn"
+        onclick="toggleSubject(this,'Commerce (11th & 12th)')">
+            Commerce<br>
+            <small>11th & 12th</small>
+        </button><br>
+
+        <button class="btn"
+        onclick="toggleSubject(this,'Science (11th & 12th)')">
+            Science<br>
+            <small>11th & 12th</small>
+        </button>
+
+    </div>
+
+    <!-- RIGHT SIDE : CLASSES -->
+    <div class="section-box">
+
+        <h3>Select Class</h3>
+
+        <button class="btn class-btn"
+        onclick="selectClass(this,'3rd')">3rd</button><br>
+
+        <button class="btn class-btn"
+        onclick="selectClass(this,'4th')">4th</button><br>
+
+        <button class="btn class-btn"
+        onclick="selectClass(this,'5th')">5th</button><br>
+
+        <button class="btn class-btn"
+        onclick="selectClass(this,'6th')">6th</button><br>
+
+        <button class="btn class-btn"
+        onclick="selectClass(this,'7th')">7th</button><br>
+
+        <button class="btn class-btn"
+        onclick="selectClass(this,'8th')">8th</button><br>
+
+        <button class="btn class-btn"
+        onclick="selectClass(this,'9th')">9th</button><br>
+
+        <button class="btn class-btn"
+        onclick="selectClass(this,'10th')">10th</button><br>
+
+        <button class="btn class-btn"
+        onclick="selectClass(this,'11th')">11th</button><br>
+
+        <button class="btn class-btn"
+        onclick="selectClass(this,'12th')">12th</button>
+
+    </div>
+
+</div>
+
+<!-- POPUP -->
+<div id="popup" class="popup-overlay">
+
+    <div class="popup-box">
+
+        <h2>PTM Classes</h2>
+
+        <p id="popupMessage"></p>
+
+        <!-- FIRST WHATSAPP BUTTON -->
+        <button id="payBtn1"
+        class="popup-btn pay-btn"
+        onclick="goToWhatsApp1()">
+
+            📚 Proceed To Connect +917000901884
+
+        </button>
+
+        <!-- SECOND WHATSAPP BUTTON -->
+        <button id="payBtn2"
+        class="popup-btn pay-btn"
+        onclick="goToWhatsApp2()">
+
+            📚 Proceed To Connect +918291139863
+
+        </button>
+
+        <!-- CANCEL BUTTON -->
+        <button class="popup-btn close-btn"
+        onclick="closePopup()">
+
+            Cancel
+
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+
+/* SELECTED DATA */
+let selectedClass = "";
+let selectedSubjects = [];
+
+/* SELECT ONLY ONE CLASS */
+function selectClass(button, className){
+
+    selectedClass = className;
+
+    let classButtons =
+    document.querySelectorAll(".class-btn");
+
+    classButtons.forEach(btn=>{
+        btn.classList.remove("selected");
+    });
+
+    button.classList.add("selected");
+}
+
+/* SUBJECT SELECT */
+function toggleSubject(button, subject){
+
+    if(button.classList.contains("selected")){
+
+        button.classList.remove("selected");
+
+        selectedSubjects =
+        selectedSubjects.filter(
+            item => item !== subject
+        );
+
+    }else{
+
+        button.classList.add("selected");
+
+        selectedSubjects.push(subject);
+    }
+}
+
+/* ENROLL */
+function enrollNow(){
+
+    let studentName =
+    document.getElementById("studentName").value;
+
+    let message = "";
+    let showButtons = true;
+
+    if(studentName === ""){
+
+        message =
+        "⚠ Please enter student name";
+
+        showButtons = false;
+    }
+
+    else if(selectedClass === "" &&
+    selectedSubjects.length === 0){
+
+        message =
+        "⚠ Please select class and subjects";
+
+        showButtons = false;
+    }
+
+    else if(selectedClass === ""){
+
+        message =
+        "⚠ Please select your class";
+
+        showButtons = false;
+    }
+
+    else if(selectedSubjects.length === 0){
+
+        message =
+        "⚠ Please select subjects";
+
+        showButtons = false;
+    }
+
+    else{
+
+        message =
+        "<b>Name:</b> " +
+        studentName +
+
+        "<br><br>" +
+
+        "<b>Class:</b> " +
+        selectedClass +
+
+        "<br><br>" +
+
+        "<b>Subjects:</b> " +
+        selectedSubjects.join(", ");
+    }
+
+    document.getElementById("popupMessage")
+    .innerHTML = message;
+
+    document.getElementById("payBtn1")
+    .style.display =
+    showButtons ? "block" : "none";
+
+    document.getElementById("payBtn2")
+    .style.display =
+    showButtons ? "block" : "none";
+
+    document.getElementById("popup")
+    .style.display = "flex";
+}
+
+/* CLOSE POPUP */
+function closePopup(){
+
+    document.getElementById("popup")
+    .style.display = "none";
+}
+
+/* FIRST WHATSAPP */
+function goToWhatsApp1(){
+
+    let studentName =
+    document.getElementById("studentName").value;
+
+    let text =
+    "Hello PTM Classes,%0A" +
+
+    "Name: " + studentName + "%0A" +
+
+    "Class: " + selectedClass + "%0A" +
+
+    "Subjects: " +
+    selectedSubjects.join(", ");
+
+    window.location.href =
+    "https://wa.me/917000901884?text=" + text;
+}
+
+/* SECOND WHATSAPP */
+function goToWhatsApp2(){
+
+    let studentName =
+    document.getElementById("studentName").value;
+
+    let text =
+    "Hello PTM Classes,%0A" +
+
+    "Name: " + studentName + "%0A" +
+
+    "Class: " + selectedClass + "%0A" +
+
+    "Subjects: " +
+    selectedSubjects.join(", ");
+
+    window.location.href =
+    "https://wa.me/918291139863?text=" + text;
+}
+
+</script>
+
+</body>
+</html>
+
+
+<div id="classPopup" class="popup-overlay">
+    <div class="popup-box">
+
+
+
+        </div>
+
+        <br>
+        <button class="cancel-btn" onclick="closeClassPopup()">Close</button>
+
+    </div>
+</div>
+
+<script>
+let selectedClass = "";
+
+function openClassPopup() {
+    document.getElementById("classPopup").style.display = "flex";
+}
+
+function closeClassPopup() {
+    document.getElementById("classPopup").style.display = "none";
+}
+
+function selectClass(button) {
+    let all = document.querySelectorAll(".class-btn");
+
+    all.forEach(btn => {
+        btn.classList.remove("selected");
+    });
+
+    button.classList.add("selected");
+    selectedClass = button.innerText;
+}
+</script>
+
+<div class="note-box">
+    <h3>📘 Note</h3>
+
+    <p>
+        From <b>3rd to 10th</b> we teach <b>all subjects</b>.
+    </p>
+
+    <p>
+        For <b>11th & 12th</b> we provide coaching for 
+        <b>Science</b> and <b>Commerce</b>.
+    </p>
+</div>
+
+<style>
+
+/* NOTE BOX */
+.note-box{
+    background:#fff3cd;
+
+    border-left:6px solid orange;
+
+    width:300px;
+
+    padding:20px;
+
+    margin-left:20px;
+    margin-top:20px;
+
+    border-radius:10px;
+
+    font-family:Arial;
+
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+
+    text-align:left;
+}
+
+/* TITLE */
+.note-box h3{
+    margin-top:0;
+    color:#d97706;
+}
+
+/* TEXT */
+.note-box p{
+    color:#333;
+    font-size:15px;
+    line-height:1.6;
+}
+
+</style>
+
+    </div>
+</section>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PTM Classes</title>
+
+<style>
+/* Main Button */
+
+.btn {
+    padding: 10px 20px;
+    background: teal;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* Popup Overlay */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup Box */
+.popup-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    width: 280px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+/* Buttons inside popup */
+.popup-box button {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.call-btn {
+    background: green;
+    color: white;
+}
+
+.wa-btn {
+    background: #25D366;
+    color: white;
+}
+
+.cancel-btn {
+    background: gray;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>PTM AI Assistant</title>
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    background:#f5f5f5;
+}
+
+/* CHAT BUTTON */
+.chat-btn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#1e88e5;
+    color:white;
+    border:none;
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    font-size:28px;
+    cursor:pointer;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* CHAT BOX */
+.chat-box{
+    position:fixed;
+    bottom:95px;
+    right:20px;
+    width:320px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    display:none;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* TOP */
+.chat-header{
+    background:#1e88e5;
+    color:white;
+    padding:15px;
+    text-align:center;
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* CHAT AREA */
+.chat-body{
+    height:350px;
+    overflow-y:auto;
+    padding:10px;
+    background:#fafafa;
+}
+
+/* MESSAGE */
+.message{
+    padding:10px;
+    margin:8px 0;
+    border-radius:10px;
+    max-width:80%;
+}
+
+.user{
+    background:#d1e7ff;
+    margin-left:auto;
+}
+
+.bot{
+    background:#eeeeee;
+}
+
+/* INPUT AREA */
+.chat-footer{
+    display:flex;
+    border-top:1px solid #ddd;
+}
+
+.chat-footer input{
+    flex:1;
+    padding:12px;
+    border:none;
+    outline:none;
+    font-size:15px;
+}
+
+.chat-footer button{
+    background:#1e88e5;
+    color:white;
+    border:none;
+    padding:12px 18px;
+    cursor:pointer;
+}
+
+</style>
+</head>
+<body>
+
+
+<body></body>
+
+
+
+<style>
+.btn {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background: lightgray;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn.selected {
+    background: green;
+    color: white;
+}
+</style>
+
+<script>
+let selectedCourses = [];
+
+function toggleCourse(button, courseName) {
+    if (button.classList.contains("selected")) {
+        // Remove selection
+        button.classList.remove("selected");
+        button.innerText = "Select";
+        selectedCourses = selectedCourses.filter(c => c !== courseName);
+    } else {
+        // Add selection
+        button.classList.add("selected");
+        button.innerText = "Selected";
+        selectedCourses.push(courseName);
+    }
+}
+
+<!-- JavaScript -->
+<script>
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
+
+function enrollNow() 
+<script>
+let selectedCourses = [];
+
+function toggleCourse(button, courseName) {
+    if (button.classList.contains("selected")) {
+        // Remove selection
+        button.classList.remove("selected");
+        button.innerText = "Select";
+
+        selectedCourses = selectedCourses.filter(c => c !== courseName);
+    } else {
+        // Add selection
+        button.classList.add("selected");
+        button.innerText = "Selected";
+
+        // Prevent duplicate entries
+        if (!selectedCourses.includes(courseName)) {
+            selectedCourses.push(courseName);
+        }
+    }
+}
+
+function enrollNow() {
+    if (selectedCourses.length === 0) {
+        alert("Please select the course you want");
+    } else {
+        alert("You have selected: " + selectedCourses.join(", "));
+    }
+}
+</script>
+<section id="about" class="about-section">
+
+    <h2><strong>PTM Classes Official : Since 2003</strong></h2>
+    
+    <p>-Experienced as well as friendly teacher who makes concepts easy to understand.Teachers explains topics in a fun and friendly way, helping students feel comfortable and connected with the teacher.</p>
+    <p> Email : </p>
+    <p> Contact :📞8291139863 , 📞7000901884</p>
+    <p> follow us on :</p>
+    <p><img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png"
+     alt="Facebook Icon"
+     width="40"
+     style="border-radius:100px;">
+     <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+     alt="YouTube Icon"
+     width="40"
+     style="border-radius:100px;"></p>
+    
+    </body>
+</html>
+
+<!-- ADDRESS SECTION -->
+<div class="address-box">
+
+    <h3>📍 PTM Classes Address</h3>
+
+    <p>
+        A1-A7, Manorama Nagar, Thane West,
+        Thane, Maharashtra - 400607
+    </p>
+
+    <!-- OPEN IN GOOGLE MAPS -->
+    <button class="map-btn"
+    onclick="openMap()">
+
+        📍 Open Location
+
+    </button>
+
+</div>
+
+
+
+<a href="https://im.ge/i/QMqaLO9" target="_blank">
+    
+      <img 
+        src="https://i.im.ge/QMqaUmX/3001.jpg" 
+        alt="PTM Classes"
+        width="300"
+        style="
+            border-radius:20px;
+            box-shadow:0 4px 15px rgba(0,0,0,0.3);
+            cursor:pointer;
+            transition:0.3s;
+        "
+        onmouseover="this.style.transform='scale(1.05)'"
+        onmouseout="this.style.transform='scale(1)'"
+    >
+
+</a>
+
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>White Text</title>
+
+<style>
+
+body{
+    background:WHITE;
+    font-family:Arial;
+}
+
+/* WHITE TEXT */
+
+.white-text{
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<p class="white-text">
+    Pawan Mishra and Pankaj Mishra founders of (PTM Classes)
+</p>
+
+</body>
+</html>
+        
+        width="100"
+        height="100"
+
+        style="
+            display:block;
+            object-fit:cover;
+            border:3px solid white;
+            box-shadow:0 0 10px rgba(0,0,0,0.3);
+        ">
+
+    <div style="
+        margin-top:8px;
+        font-size:14px;
+        font-weight:bold;
+        color:black;
+        font-family:Arial;
+        background:white;
+        padding:5px;
+        border-radius:6px;
+    ">
+        Founder Of PTM Classes
+    </div>
+
+
+<div style="">
+
+   
+
+                <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>White Text</title>
+
+<style>
+
+body{
+    background:WHITE;
+    font-family:Arial;
+}
+
+/* WHITE TEXT */
+
+.white-text{
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<p class="white-text">
+    
+</p>
+
+</body>
+</html>
+
+
+</div>
+
+</div>
+
+
+
+
+<div style="">
+
+
+                <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>White Text</title>
+
+<style>
+
+body{
+    background:WHITE;
+    font-family:Arial;
+}
+
+/* WHITE TEXT */
+
+.white-text{
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+
+
+</div>
+
+<style>
+
+/* ADDRESS BOX */
+.address-box{
+    background:white;
+    padding:20px;
+    margin:20px auto;
+    width:500px;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+/* TITLE */
+.address-box h3{
+    color:teal;
+    margin-bottom:10px;
+}
+
+/* ADDRESS TEXT */
+.address-box p{
+    font-size:15px;
+    line-height:1.7;
+    color:#333;
+}
+
+/* MAP BUTTON */
+.map-btn{
+    background:green;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+</style>
+
+<script>
+
+/* OPEN GOOGLE MAP */
+function openMap(){
+
+    window.location.href =
+    "https://www.google.com/maps/search/?api=1&query=A1-A7+Manorama+Nagar+Thane+West+Thane+Maharashtra+400607";
+}
+
+</script>
+    
+
+</section>
+<head>
+  <style>
+.about-section {
+    text-align: center;
+    padding: 40px;
+    background-color:black
+    ;
+}
+
+.about-section h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: gray;
+}
+</style>
+</head>
+
+</script>
+
