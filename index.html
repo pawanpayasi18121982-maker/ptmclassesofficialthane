@@ -1162,4 +1162,564 @@ function goToWhatsApp2(){
 let selectedClass = "";
 
 function openClassPopup() {
-    document.getElementById("classPopup").style.displ
+    document.getElementById("classPopup").style.display = "flex";
+}
+
+function closeClassPopup() {
+    document.getElementById("classPopup").style.display = "none";
+}
+
+function selectClass(button) {
+    let all = document.querySelectorAll(".class-btn");
+
+    all.forEach(btn => {
+        btn.classList.remove("selected");
+    });
+
+    button.classList.add("selected");
+    selectedClass = button.innerText;
+}
+</script>
+
+<div class="note-box">
+    <h3>📘 Note</h3>
+
+    <p>
+        From <b>3rd to 10th</b> we teach <b>all subjects</b>.
+    </p>
+
+    <p>
+        For <b>11th & 12th</b> we provide coaching for 
+        <b>Science</b> and <b>Commerce</b>.
+    </p>
+</div>
+
+<style>
+
+/* NOTE BOX */
+.note-box{
+    background:#fff3cd;
+
+    border-left:6px solid orange;
+
+    width:200px;
+
+    padding:20px;
+
+    margin-left:20px;
+    margin-top:20px;
+
+    border-radius:10px;
+
+    font-family:Arial;
+
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+
+    text-align:left;
+}
+
+/* TITLE */
+.note-box h3{
+    margin-top:0;
+    color:#d97706;
+}
+
+/* TEXT */
+.note-box p{
+    color:#333;
+    font-size:15px;
+    line-height:1.6;
+}
+
+</style>
+
+    </div>
+</section>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PTM Classes</title>
+
+<style>
+/* Main Button */
+
+.btn {
+    padding: 10px 20px;
+    background: teal;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* Popup Overlay */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup Box */
+.popup-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    width: 280px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+/* Buttons inside popup */
+.popup-box button {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.call-btn {
+    background: green;
+    color: white;
+}
+
+.wa-btn {
+    background: #25D366;
+    color: white;
+}
+
+.cancel-btn {
+    background: gray;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>PTM AI Assistant</title>
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    background:#f5f5f5;
+}
+
+/* CHAT BUTTON */
+.chat-btn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#1e88e5;
+    color:white;
+    border:none;
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    font-size:28px;
+    cursor:pointer;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* CHAT BOX */
+.chat-box{
+    position:fixed;
+    bottom:95px;
+    right:20px;
+    width:320px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    display:none;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* TOP */
+.chat-header{
+    background:#1e88e5;
+    color:white;
+    padding:15px;
+    text-align:center;
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* CHAT AREA */
+.chat-body{
+    height:350px;
+    overflow-y:auto;
+    padding:10px;
+    background:#fafafa;
+}
+
+/* MESSAGE */
+.message{
+    padding:10px;
+    margin:8px 0;
+    border-radius:10px;
+    max-width:80%;
+}
+
+.user{
+    background:#d1e7ff;
+    margin-left:auto;
+}
+
+.bot{
+    background:#eeeeee;
+}
+
+/* INPUT AREA */
+.chat-footer{
+    display:flex;
+    border-top:1px solid #ddd;
+}
+
+.chat-footer input{
+    flex:1;
+    padding:12px;
+    border:none;
+    outline:none;
+    font-size:15px;
+}
+
+.chat-footer button{
+    background:#1e88e5;
+    color:white;
+    border:none;
+    padding:12px 18px;
+    cursor:pointer;
+}
+
+</style>
+</head>
+<body>
+
+
+<body></body>
+
+
+
+<style>
+.btn {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background: lightgray;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn.selected {
+    background: green;
+    color: white;
+}
+</style>
+
+<script>
+let selectedCourses = [];
+
+function toggleCourse(button, courseName) {
+    if (button.classList.contains("selected")) {
+        // Remove selection
+        button.classList.remove("selected");
+        button.innerText = "Select";
+        selectedCourses = selectedCourses.filter(c => c !== courseName);
+    } else {
+        // Add selection
+        button.classList.add("selected");
+        button.innerText = "Selected";
+        selectedCourses.push(courseName);
+    }
+}
+
+<!-- JavaScript -->
+<script>
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
+
+function enrollNow() 
+<script>
+let selectedCourses = [];
+
+function toggleCourse(button, courseName) {
+    if (button.classList.contains("selected")) {
+        // Remove selection
+        button.classList.remove("selected");
+        button.innerText = "Select";
+
+        selectedCourses = selectedCourses.filter(c => c !== courseName);
+    } else {
+        // Add selection
+        button.classList.add("selected");
+        button.innerText = "Selected";
+
+        // Prevent duplicate entries
+        if (!selectedCourses.includes(courseName)) {
+            selectedCourses.push(courseName);
+        }
+    }
+}
+
+function enrollNow() {
+    if (selectedCourses.length === 0) {
+        alert("Please select the course you want");
+    } else {
+        alert("You have selected: " + selectedCourses.join(", "));
+    }
+}
+</script>
+<section id="about" class="about-section">
+
+    <h2><strong>PTM Classes Official : Since 2003</strong></h2>
+    
+    <p>-Experienced as well as friendly teacher who makes concepts easy to understand.Teachers explains topics in a fun and friendly way, helping students feel comfortable and connected with the teacher.</p>
+    <p> Email : </p>
+    <p> Contact :📞8291139863 , 📞7000901884</p>
+    <p> follow us on :</p>
+    <p><img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png"
+     alt="Facebook Icon"
+     width="40"
+     style="border-radius:100px;">
+     <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+     alt="YouTube Icon"
+     width="40"
+     style="border-radius:100px;"></p>
+    
+    </body>
+</html>
+
+<!-- ADDRESS SECTION -->
+<div class="address-box">
+
+    <h3>📍 PTM Classes Address</h3>
+
+    <p>
+        A1-A7, Manorama Nagar, Thane West,
+        Thane, Maharashtra - 400607
+    </p>
+
+    <!-- OPEN IN GOOGLE MAPS -->
+    <button class="map-btn"
+    onclick="openMap()">
+
+        📍 Open Location
+
+    </button>
+
+</div>
+
+
+<a href="https://im.ge/i/QMqaLO9" target="_blank">
+    
+      <img 
+        src="https://i.im.ge/QMqaUmX/3001.jpg" 
+        alt="PTM Classes"
+        width="300"
+        style="
+            border-radius:20px;
+            box-shadow:0 4px 15px rgba(0,0,0,0.3);
+            cursor:pointer;
+            transition:0.3s;
+        "
+        onmouseover="this.style.transform='scale(1.05)'"
+        onmouseout="this.style.transform='scale(1)'"
+    >
+
+</a>
+
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>White Text</title>
+
+<style>
+
+body{
+    background:WHITE;
+    font-family:Arial;
+}
+
+/* WHITE TEXT */
+
+.white-text{
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<p class="white-text">
+    Pawan Mishra and Pankaj Mishra founders of (PTM Classes)
+</p>
+
+</body>
+</html>
+        
+        width="100"
+        height="100"
+
+        style="
+            display:block;
+            object-fit:cover;
+            border:3px solid white;
+            box-shadow:0 0 10px rgba(0,0,0,0.3);
+        ">
+
+    <div style="
+        margin-top:8px;
+        font-size:14px;
+        font-weight:bold;
+        color:black;
+        font-family:Arial;
+        background:white;
+        padding:5px;
+        border-radius:6px;
+    ">
+        Founder Of PTM Classes
+    </div>
+
+
+<div style="">
+
+   
+
+                <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>White Text</title>
+
+<style>
+
+body{
+    background:WHITE;
+    font-family:Arial;
+}
+
+/* WHITE TEXT */
+
+.white-text{
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+</div>
+
+<style>
+
+/* ADDRESS BOX */
+.address-box{
+    background:white;
+    padding:20px;
+    margin:20px auto;
+    width:270px;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+/* TITLE */
+.address-box h3{
+    color:teal;
+    margin-bottom:10px;
+}
+
+/* ADDRESS TEXT */
+.address-box p{
+    font-size:15px;
+    line-height:1.7;
+    color:#333;
+}
+
+/* MAP BUTTON */
+.map-btn{
+    background:green;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+</style>
+
+<script>
+
+/* OPEN GOOGLE MAP */
+function openMap(){
+
+    window.location.href =
+    "https://www.google.com/maps/search/?api=1&query=PTM Classes+A1-A7+Manorama Nagar+Thane West+Thane+Maharashtra+400607";
+}
+
+</script>
+    
+
+</section>
+<head>
+  <style>
+.about-section {
+    text-align: center;
+    padding: 40px;
+    background-color:black
+    ;
+}
+
+.about-section h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: gray;
+}
+</style>
+</head>
+
+</script>
+
+    
